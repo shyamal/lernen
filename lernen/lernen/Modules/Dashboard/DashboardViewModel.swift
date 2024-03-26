@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+
+class DashboardViewModel: ObservableObject {
+    // Your Dashboard logic here
+}

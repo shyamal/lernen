@@ -26,7 +26,7 @@ class AppCoordinator: ObservableObject {
         case .dashboard:
             DashboardCoordinator().start()
         case .userFlow:
-            UserFlowCoordinator().start()
+            StartupView(coordinator: self)
         }
     }
     

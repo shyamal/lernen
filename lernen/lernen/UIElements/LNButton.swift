@@ -8,11 +8,20 @@
 import SwiftUI
 
 struct LNButton: View {
+    var title: String
+    var action: () -> Void
+    // Gradient colors for the 3D effect
+        var topColor: Color = .blue
+        var bottomColor: Color = .purple
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(title,action: action)
+        .buttonStyle(LNButtonStyle())
+        .frame(height: 60)
+        .padding()
     }
 }
 
 #Preview {
-    LNButton()
+    LNButton(title: "Title", action: {})
 }

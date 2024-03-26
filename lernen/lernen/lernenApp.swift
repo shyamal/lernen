@@ -10,6 +10,8 @@ import SwiftData
 
 @main
 struct lernenApp: App {
+    @StateObject private var appCoordinator = AppCoordinator()
+    
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
@@ -24,9 +26,14 @@ struct lernenApp: App {
     }()
 
     var body: some Scene {
+        
+        
         WindowGroup {
-            ContentView()
+            appCoordinator.contentView()
         }
         .modelContainer(sharedModelContainer)
     }
 }
+
+
+

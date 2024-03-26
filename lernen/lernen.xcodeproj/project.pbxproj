@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B2AE4192BB036210052B856 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AE4182BB036210052B856 /* DashboardView.swift */; };
+		6B2AE41B2BB0385C0052B856 /* DashboardCooridnator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AE41A2BB0385C0052B856 /* DashboardCooridnator.swift */; };
+		6B2AE41D2BB0812B0052B856 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AE41C2BB0812B0052B856 /* DashboardViewModel.swift */; };
+		6B2AE4202BB087480052B856 /* LNButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AE41F2BB087480052B856 /* LNButton.swift */; };
+		6B2AE4222BB094AA0052B856 /* LNButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2AE4212BB094AA0052B856 /* LNButtonStyle.swift */; };
+		6B3825212BADEBC0002461C2 /* StartupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3825202BADEBC0002461C2 /* StartupView.swift */; };
+		6B3825232BADEBE0002461C2 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3825222BADEBE0002461C2 /* AppCoordinator.swift */; };
+		6B3825252BADF0AA002461C2 /* LoginViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3825242BADF0AA002461C2 /* LoginViewModal.swift */; };
+		6B3825282BADFE08002461C2 /* Cordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3825272BADFE08002461C2 /* Cordinator.swift */; };
 		6BA51C5B2BA4C3CD00C347AD /* lernenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA51C5A2BA4C3CD00C347AD /* lernenApp.swift */; };
 		6BA51C5D2BA4C3CD00C347AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA51C5C2BA4C3CD00C347AD /* ContentView.swift */; };
 		6BA51C5F2BA4C3CD00C347AD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA51C5E2BA4C3CD00C347AD /* Item.swift */; };
@@ -35,6 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B2AE4182BB036210052B856 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		6B2AE41A2BB0385C0052B856 /* DashboardCooridnator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCooridnator.swift; sourceTree = "<group>"; };
+		6B2AE41C2BB0812B0052B856 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		6B2AE41F2BB087480052B856 /* LNButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNButton.swift; sourceTree = "<group>"; };
+		6B2AE4212BB094AA0052B856 /* LNButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNButtonStyle.swift; sourceTree = "<group>"; };
+		6B3825202BADEBC0002461C2 /* StartupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartupView.swift; sourceTree = "<group>"; };
+		6B3825222BADEBE0002461C2 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		6B3825242BADF0AA002461C2 /* LoginViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModal.swift; sourceTree = "<group>"; };
+		6B3825272BADFE08002461C2 /* Cordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cordinator.swift; sourceTree = "<group>"; };
 		6BA51C572BA4C3CD00C347AD /* lernen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lernen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA51C5A2BA4C3CD00C347AD /* lernenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lernenApp.swift; sourceTree = "<group>"; };
 		6BA51C5C2BA4C3CD00C347AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +91,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B2AE4172BB036030052B856 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				6B2AE4182BB036210052B856 /* DashboardView.swift */,
+				6B2AE41A2BB0385C0052B856 /* DashboardCooridnator.swift */,
+				6B2AE41C2BB0812B0052B856 /* DashboardViewModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		6B2AE41E2BB087220052B856 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				6B2AE41F2BB087480052B856 /* LNButton.swift */,
+				6B2AE4212BB094AA0052B856 /* LNButtonStyle.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		6B38251C2BADE93C002461C2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6B2AE4172BB036030052B856 /* Dashboard */,
+				6B38251D2BADEB63002461C2 /* Statup */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6B38251D2BADEB63002461C2 /* Statup */ = {
+			isa = PBXGroup;
+			children = (
+				6B3825202BADEBC0002461C2 /* StartupView.swift */,
+				6B3825242BADF0AA002461C2 /* LoginViewModal.swift */,
+			);
+			path = Statup;
+			sourceTree = "<group>";
+		};
+		6B3825262BADFDEC002461C2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6B3825272BADFE08002461C2 /* Cordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		6BA51C4E2BA4C3CD00C347AD = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +159,11 @@
 		6BA51C592BA4C3CD00C347AD /* lernen */ = {
 			isa = PBXGroup;
 			children = (
+				6B2AE41E2BB087220052B856 /* UIElements */,
+				6B3825262BADFDEC002461C2 /* Protocol */,
+				6B38251C2BADE93C002461C2 /* Modules */,
 				6BA51C5A2BA4C3CD00C347AD /* lernenApp.swift */,
+				6B3825222BADEBE0002461C2 /* AppCoordinator.swift */,
 				6BA51C5C2BA4C3CD00C347AD /* ContentView.swift */,
 				6BA51C5E2BA4C3CD00C347AD /* Item.swift */,
 				6BA51C602BA4C3CE00C347AD /* Assets.xcassets */,
@@ -260,8 +327,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B3825282BADFE08002461C2 /* Cordinator.swift in Sources */,
+				6B2AE4222BB094AA0052B856 /* LNButtonStyle.swift in Sources */,
+				6B2AE41D2BB0812B0052B856 /* DashboardViewModel.swift in Sources */,
+				6B2AE4192BB036210052B856 /* DashboardView.swift in Sources */,
+				6B3825232BADEBE0002461C2 /* AppCoordinator.swift in Sources */,
 				6BA51C5D2BA4C3CD00C347AD /* ContentView.swift in Sources */,
 				6BA51C5F2BA4C3CD00C347AD /* Item.swift in Sources */,
+				6B2AE41B2BB0385C0052B856 /* DashboardCooridnator.swift in Sources */,
+				6B3825212BADEBC0002461C2 /* StartupView.swift in Sources */,
+				6B3825252BADF0AA002461C2 /* LoginViewModal.swift in Sources */,
+				6B2AE4202BB087480052B856 /* LNButton.swift in Sources */,
 				6BA51C5B2BA4C3CD00C347AD /* lernenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

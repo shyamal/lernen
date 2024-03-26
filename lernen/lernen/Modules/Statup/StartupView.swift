@@ -6,13 +6,32 @@
 //
 
 import SwiftUI
+import Combine
 
 struct StartupView: View {
+    @ObservedObject var coordinator: AppCoordinator
+    
+    @State private var navigateToNextView = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            Color.gray.ignoresSafeArea(.all)
+            VStack {
+                Image("logo")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 150, height: 150)
+                    
+            }
+        }
+        .onAppear{
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+                coordinator.goToDashboard()
+            }
+        }
     }
 }
 
 #Preview {
-    StartupView()
+    StartupView(coordinator: AppCoordinator())
 }
